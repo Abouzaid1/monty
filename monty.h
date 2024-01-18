@@ -65,8 +65,8 @@ char  *clean_line(char *content);
 void my_push(stack_t **head, unsigned int number);
 void my_pall(stack_t **head, unsigned int number);
 void my_pint(stack_t **head, unsigned int number);
-int emyecute(char *content, stack_t **head, unsigned int counter, FILE *file);
-void myree_stack(stack_t *head);
+int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+void free_stack(stack_t *head);
 void my_pop(stack_t **head, unsigned int counter);
 void my_swap(stack_t **head, unsigned int counter);
 void my_add(stack_t **head, unsigned int counter);
@@ -81,8 +81,8 @@ void my_rotl(stack_t **head, unsigned int counter);
 void my_rotr(stack_t **head, __attribute__((unused)) unsigned int counter);
 void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+void my_queue(stack_t **head, unsigned int counter);
+void my_stack(stack_t **head, unsigned int counter);
 
 
 #endif
